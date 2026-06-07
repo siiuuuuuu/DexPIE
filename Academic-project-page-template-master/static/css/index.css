@@ -114,12 +114,32 @@ body {
 
 
 /* Publication Content Styling */
+.publication-title-container {
+  max-width: 1120px !important;
+}
+
+.publication-title-hero {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
+
 .publication-title {
     font-family: 'Inter', sans-serif !important;
     font-weight: 800 !important;
     color: var(--text-primary) !important;
     margin-bottom: 2rem !important;
     line-height: 1.1 !important;
+    font-size: 2.35rem !important;
+}
+
+.publication-title-line {
+  display: block;
+}
+
+@media screen and (min-width: 1200px) {
+  .publication-title {
+    font-size: 3rem !important;
+  }
 }
 
 .publication-banner {
@@ -748,6 +768,4 @@ a:focus {
     box-shadow: none !important;
   }
 }
-
-
 
