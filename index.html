@@ -1,77 +1,312 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="utf-8">
-  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
-  <!-- Replace the content tag with appropriate information -->
-  <meta name="description" content="DESCRIPTION META TAG">
-  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG"/>
-  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/>
-  <meta property="og:url" content="URL OF THE WEBSITE"/>
-  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
-  <meta property="og:image" content="static/image/your_banner_image.png" />
-  <meta property="og:image:width" content="1200"/>
-  <meta property="og:image:height" content="630"/>
-
-
-  <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
-  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
-  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
-  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
-  <meta name="twitter:card" content="summary_large_image">
-  <!-- Keywords for your paper to be indexed by-->
-  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
+  <!-- Primary Meta Tags -->
+  <!-- TODO: Replace with your paper title and author names -->
+  <meta name="title" content="DexPIE: Stable Dexterous Policy Improvement from Real-World Experience - Ruizhe Liao, Wenrui Chen, Liangji Zeng, Haoran Lin, Fan Yang, Kailun Yang, Yaonan Wang">
+  <!-- TODO: Write a compelling 150-160 character description of your research -->
+  <meta name="description" content="DexPIE is a post-training framework for stable dexterous policy improvement from real-world deployment experience.">
+  <!-- TODO: Add 5-10 relevant keywords for your research area -->
+  <meta name="keywords" content="DexPIE, dexterous manipulation, real-world reinforcement learning, imitation learning, policy improvement, DAgger, robotics">
+  <!-- TODO: List all authors -->
+  <meta name="author" content="Ruizhe Liao, Wenrui Chen, Liangji Zeng, Haoran Lin, Fan Yang, Kailun Yang, Yaonan Wang">
+  <meta name="robots" content="index, follow">
+  <meta name="language" content="English">
 
-  <title>Academic Project Page</title>
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="article">
+  <!-- TODO: Replace with your institution or lab name -->
+  <meta property="og:site_name" content="Hunan University">
+  <!-- TODO: Same as paper title above -->
+  <meta property="og:title" content="DexPIE: Stable Dexterous Policy Improvement from Real-World Experience">
+  <!-- TODO: Same as description above -->
+  <meta property="og:description" content="DexPIE is a post-training framework for stable dexterous policy improvement from real-world deployment experience.">
+  <!-- TODO: Replace with your actual website URL -->
+  <meta property="og:url" content="https://siiuuuuu.github.io/DexPIE">
+  <!-- TODO: Create a 1200x630px preview image and update path -->
+  <meta property="og:image" content="https://YOUR_DOMAIN.com/static/images/social_preview.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="DexPIE: Stable Dexterous Policy Improvement from Real-World Experience - Research Preview">
+  <meta property="article:published_time" content="2024-01-01T00:00:00.000Z">
+  <meta property="article:author" content="Ruizhe Liao">
+  <meta property="article:section" content="Research">
+  <meta property="article:tag" content="Dexterous Manipulation">
+  <meta property="article:tag" content="Real-World Reinforcement Learning">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- TODO: Replace with your lab/institution Twitter handle -->
+  <meta name="twitter:site" content="@YOUR_TWITTER_HANDLE">
+  <!-- TODO: Replace with first author's Twitter handle -->
+  <meta name="twitter:creator" content="@AUTHOR_TWITTER_HANDLE">
+  <!-- TODO: Same as paper title above -->
+  <meta name="twitter:title" content="DexPIE: Stable Dexterous Policy Improvement from Real-World Experience">
+  <!-- TODO: Same as description above -->
+  <meta name="twitter:description" content="DexPIE is a post-training framework for stable dexterous policy improvement from real-world deployment experience.">
+  <!-- TODO: Same as social preview image above -->
+  <meta name="twitter:image" content="https://YOUR_DOMAIN.com/static/images/social_preview.png">
+  <meta name="twitter:image:alt" content="DexPIE: Stable Dexterous Policy Improvement from Real-World Experience - Research Preview">
+
+  <!-- Academic/Research Specific -->
+  <meta name="citation_title" content="DexPIE: Stable Dexterous Policy Improvement from Real-World Experience">
+  <meta name="citation_author" content="Liao, Ruizhe">
+  <meta name="citation_author" content="Chen, Wenrui">
+  <meta name="citation_author" content="Zeng, Liangji">
+  <meta name="citation_author" content="Lin, Haoran">
+  <meta name="citation_author" content="Yang, Fan">
+  <meta name="citation_author" content="Yang, Kailun">
+  <meta name="citation_author" content="Wang, Yaonan">
+  <meta name="citation_publication_date" content="2024">
+  <meta name="citation_conference_title" content="CONFERENCE_NAME">
+  <meta name="citation_pdf_url" content="https://YOUR_DOMAIN.com/static/pdfs/paper.pdf">
+
+  <!-- Additional SEO -->
+  <meta name="theme-color" content="#2563eb">
+  <meta name="msapplication-TileColor" content="#2563eb">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+
+  <!-- Preconnect for performance -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://ajax.googleapis.com">
+  <link rel="preconnect" href="https://documentcloud.adobe.com">
+  <link rel="preconnect" href="https://cdn.jsdelivr.net">
+
+
+  <!-- TODO: Replace with your paper title and authors -->
+  <title>DexPIE: Stable Dexterous Policy Improvement from Real-World Experience</title>
+
+  <!-- Favicon and App Icons -->
   <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
-  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
-  rel="stylesheet">
+  <link rel="apple-touch-icon" href="static/images/favicon.ico">
 
+  <!-- Critical CSS - Load synchronously -->
   <link rel="stylesheet" href="static/css/bulma.min.css">
-  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
-  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
-  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
-  <link rel="stylesheet"
-  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   <link rel="stylesheet" href="static/css/index.css">
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <!-- Non-critical CSS - Load asynchronously -->
+  <link rel="preload" href="static/css/bulma-carousel.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="preload" href="static/css/bulma-slider.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="preload" href="static/css/fontawesome.all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="preload" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+
+  <!-- Fallback for browsers that don't support preload -->
+  <noscript>
+    <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+    <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+    <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  </noscript>
+
+  <!-- Fonts - Optimized loading -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Defer non-critical JavaScript -->
+  <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
   <script defer src="static/js/fontawesome.all.min.js"></script>
-  <script src="static/js/bulma-carousel.min.js"></script>
-  <script src="static/js/bulma-slider.min.js"></script>
-  <script src="static/js/index.js"></script>
+  <script defer src="static/js/bulma-carousel.min.js"></script>
+  <script defer src="static/js/bulma-slider.min.js"></script>
+  <script defer src="static/js/index.js"></script>
+
+  <!-- Structured Data for Academic Papers -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ScholarlyArticle",
+    "headline": "DexPIE: Stable Dexterous Policy Improvement from Real-World Experience",
+    "description": "DexPIE is a post-training framework for stable dexterous policy improvement from real-world deployment experience.",
+    "author": [
+      {
+        "@type": "Person",
+        "name": "Ruizhe Liao",
+        "affiliation": {
+          "@type": "Organization",
+          "name": "Hunan University"
+        }
+      },
+      {
+        "@type": "Person",
+        "name": "Wenrui Chen",
+        "affiliation": {
+          "@type": "Organization",
+          "name": "Hunan University"
+        }
+      },
+      {
+        "@type": "Person",
+        "name": "Liangji Zeng",
+        "affiliation": {
+          "@type": "Organization",
+          "name": "Hunan University"
+        }
+      },
+      {
+        "@type": "Person",
+        "name": "Haoran Lin",
+        "affiliation": {
+          "@type": "Organization",
+          "name": "Hunan University"
+        }
+      },
+      {
+        "@type": "Person",
+        "name": "Fan Yang",
+        "affiliation": {
+          "@type": "Organization",
+          "name": "Hunan University"
+        }
+      },
+      {
+        "@type": "Person",
+        "name": "Kailun Yang",
+        "affiliation": {
+          "@type": "Organization",
+          "name": "Hunan University"
+        }
+      },
+      {
+        "@type": "Person",
+        "name": "Yaonan Wang",
+        "affiliation": {
+          "@type": "Organization",
+          "name": "Hunan University"
+        }
+      }
+    ],
+    "datePublished": "2024-01-01",
+    "publisher": {
+      "@type": "Organization",
+      "name": "CONFERENCE_OR_JOURNAL_NAME"
+    },
+    "url": "https://siiuuuuu.github.io/DexPIE",
+    "image": "https://YOUR_DOMAIN.com/static/images/social_preview.png",
+    "keywords": ["DexPIE", "dexterous manipulation", "real-world reinforcement learning", "imitation learning", "policy improvement", "DAgger", "robotics"],
+    "abstract": "Dexterous manipulation presents substantial challenges for imitation learning due to its high-dimensional action space and complex contact-rich dynamics. Policies trained purely from demonstrations often suffer from compounding errors during deployment and require large amounts of expert data to achieve reliable performance. To move beyond the limitations of demonstration data, in this work, we propose DexPIE, a post-training framework for dexterous policy improvement from experience collected through real-world deployment. First, DexPIE enables effective exploration coverage through a dexterous-hand-adapted intervention system and multi-stage DAgger-style data collection across initial and intermediate task stages, providing reliable supervision for accurate policy evaluation. To reduce temporal noise between post-training rollouts and demonstration data, we introduce asynchronous inference in the relative action space, which better aligns rollout data with demonstrated behavior and allows the critic to learn a value function induced by a more consistent underlying policy. Finally, DexPIE improves the policy through conditioning on a continuous optimality indicator, allowing the policy to leverage the quality of data in a more fine-grained manner. Across three challenging real-world dexterous manipulation tasks, DexPIE achieves a 37% improvement in success rate over the demonstration-based reference policy, outperforming all baseline methods and demonstrating stronger robustness. The source code and dataset will be made publicly available.",
+    "citation": "BIBTEX_CITATION_HERE",
+    "isAccessibleForFree": true,
+    "license": "https://creativecommons.org/licenses/by/4.0/",
+    "mainEntity": {
+      "@type": "WebPage",
+      "@id": "https://siiuuuuu.github.io/DexPIE"
+    },
+    "about": [
+      {
+        "@type": "Thing",
+        "name": "Dexterous Manipulation"
+      },
+      {
+        "@type": "Thing",
+        "name": "Real-World Reinforcement Learning"
+      }
+    ]
+  }
+  </script>
+
+  <!-- Website/Organization Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Hunan University",
+    "url": "https://siiuuuuu.github.io/DexPIE",
+    "logo": "https://YOUR_DOMAIN.com/static/images/favicon.ico",
+    "sameAs": [
+      "https://twitter.com/YOUR_TWITTER_HANDLE",
+      "https://github.com/YOUR_GITHUB_USERNAME"
+    ]
+  }
+  </script>
 </head>
 <body>
 
 
+  <!-- Scroll to Top Button -->
+  <button class="scroll-to-top" onclick="scrollToTop()" title="Scroll to top" aria-label="Scroll to top">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+  <!-- More Works Dropdown -->
+  <div class="more-works-container">
+    <button class="more-works-btn" onclick="toggleMoreWorks()" title="View More Works from Our Lab">
+      <i class="fas fa-flask"></i>
+      More Works
+      <i class="fas fa-chevron-down dropdown-arrow"></i>
+    </button>
+    <div class="more-works-dropdown" id="moreWorksDropdown">
+      <div class="dropdown-header">
+        <h4>More Works from Our Lab</h4>
+        <button class="close-btn" onclick="toggleMoreWorks()">
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+      <div class="works-list">
+        <!-- TODO: Replace with your lab's related works -->
+        <a href="https://arxiv.org/abs/PAPER_ID_1" class="work-item" target="_blank">
+          <div class="work-info">
+            <!-- TODO: Replace with actual paper title -->
+            <h5>Paper Title 1</h5>
+            <!-- TODO: Replace with brief description -->
+            <p>Brief description of the work and its main contribution.</p>
+            <!-- TODO: Replace with venue and year -->
+            <span class="work-venue">Conference/Journal 2024</span>
+          </div>
+          <i class="fas fa-external-link-alt"></i>
+        </a>
+        <!-- TODO: Add more related works or remove extra items -->
+        <a href="https://arxiv.org/abs/PAPER_ID_2" class="work-item" target="_blank">
+          <div class="work-info">
+            <h5>Paper Title 2</h5>
+            <p>Brief description of the work and its main contribution.</p>
+            <span class="work-venue">Conference/Journal 2023</span>
+          </div>
+          <i class="fas fa-external-link-alt"></i>
+        </a>
+        <a href="https://arxiv.org/abs/PAPER_ID_3" class="work-item" target="_blank">
+          <div class="work-info">
+            <h5>Paper Title 3</h5>
+            <p>Brief description of the work and its main contribution.</p>
+            <span class="work-venue">Conference/Journal 2023</span>
+          </div>
+          <i class="fas fa-external-link-alt"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <main id="main-content">
   <section class="hero">
-    <div class="hero-body">
-      <div class="container is-max-desktop">
+    <div class="hero-body publication-title-hero">
+      <div class="container is-max-widescreen publication-title-container">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">Stable Dexterous Policy Improvement fromExperience</h1>
+            <h1 class="title is-1 publication-title">
+              <span class="publication-title-line">DexPIE: Stable Dexterous Policy Improvement</span>
+              <span class="publication-title-line">from Real-World Experience</span>
+            </h1>
             <div class="is-size-5 publication-authors">
-              <!-- Paper authors -->
-              <span class="author-block">
-                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">First Author</a><sup>*</sup>,</span>
-                <span class="author-block">
-                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Second Author</a><sup>*</sup>,</span>
-                  <span class="author-block">
-                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Third Author</a>
-                  </span>
-                  </div>
+              <span class="author-block">Ruizhe Liao<sup>1</sup>,</span>
+              <span class="author-block">Wenrui Chen<sup>1,&dagger;</sup>,</span>
+              <span class="author-block">Liangji Zeng<sup>1</sup>,</span>
+              <span class="author-block">Haoran Lin<sup>1</sup>,</span>
+              <span class="author-block">Fan Yang<sup>1</sup>,</span>
+              <span class="author-block">Kailun Yang<sup>1</sup>,</span>
+              <span class="author-block">Yaonan Wang<sup>1</sup></span>
+            </div>
 
                   <div class="is-size-5 publication-authors">
-                    <span class="author-block">Institution Name<br>Conferance name and year</span>
-                    <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
+                    <span class="author-block"><sup>1</sup>Hunan University</span>
+                    <span class="eql-cntrb"><small><br><sup>&dagger;</sup>Corresponding author</small></span>
                   </div>
 
                   <div class="column has-text-centered">
                     <div class="publication-links">
-                         <!-- Arxiv PDF link -->
+                         <!-- TODO: Update with your arXiv paper ID -->
                       <span class="link-block">
                         <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
                         class="external-link button is-normal is-rounded is-dark">
@@ -82,7 +317,7 @@
                       </a>
                     </span>
 
-                    <!-- Supplementary PDF link -->
+                    <!-- TODO: Add your supplementary material PDF or remove this section -->
                     <span class="link-block">
                       <a href="static/pdfs/supplementary_material.pdf" target="_blank"
                       class="external-link button is-normal is-rounded is-dark">
@@ -93,7 +328,7 @@
                     </a>
                   </span>
 
-                  <!-- Github link -->
+                  <!-- TODO: Replace with your GitHub repository URL -->
                   <span class="link-block">
                     <a href="https://github.com/YOUR REPO HERE" target="_blank"
                     class="external-link button is-normal is-rounded is-dark">
@@ -104,7 +339,7 @@
                   </a>
                 </span>
 
-                <!-- ArXiv abstract Link -->
+                <!-- TODO: Update with your arXiv paper ID -->
                 <span class="link-block">
                   <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
                   class="external-link button is-normal is-rounded is-dark">
@@ -125,16 +360,24 @@
 
 <!-- Teaser video-->
 <section class="hero teaser">
-  <div class="container is-max-desktop">
+  <div class="container is-max-widescreen">
     <div class="hero-body">
-      <video poster="" id="tree" autoplay controls muted loop height="100%">
-        <!-- Your video here -->
-        <source src="static/videos/banner_video.mp4"
-        type="video/mp4">
-      </video>
-      <h2 class="subtitle has-text-centered">
-        Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus. 
-      </h2>
+      <a class="youtube-preview-card" href="https://youtu.be/LBJb5GufS7Y" target="_blank" rel="noopener noreferrer" aria-label="Watch DexPIE teaser video on YouTube">
+        <img class="youtube-preview-media" src="static/images/video_cover.png" alt="DexPIE teaser video cover" loading="lazy">
+        <span class="youtube-preview-shade"></span>
+        <span class="youtube-preview-header">
+          <span class="youtube-preview-avatar">D</span>
+          <span>
+            <span class="youtube-preview-title">DexPIE: Stable Dexterous Policy Improvement from Real-World Experience</span>
+            <span class="youtube-preview-channel">DexPIE</span>
+          </span>
+        </span>
+        <span class="youtube-play-button" aria-hidden="true"></span>
+        <span class="youtube-watch-label">
+          <i class="fab fa-youtube"></i>
+          Watch on YouTube
+        </span>
+      </a>
     </div>
   </div>
 </section>
@@ -148,7 +391,7 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper tellus sed ante aliquam tempus. Etiam porttitor urna feugiat nibh elementum, et tempor dolor mattis. Donec accumsan enim augue, a vulputate nisi sodales sit amet. Proin bibendum ex eget mauris cursus euismod nec et nibh. Maecenas ac gravida ante, nec cursus dui. Vivamus purus nibh, placerat ac purus eget, sagittis vestibulum metus. Sed vestibulum bibendum lectus gravida commodo. Pellentesque auctor leo vitae sagittis suscipit.
+            Dexterous manipulation presents substantial challenges for imitation learning due to its high-dimensional action space and complex contact-rich dynamics. Policies trained purely from demonstrations often suffer from compounding errors during deployment and require large amounts of expert data to achieve reliable performance. To move beyond the limitations of demonstration data, in this work, we propose DexPIE, a post-training framework for dexterous policy improvement from experience collected through real-world deployment. First, DexPIE enables effective exploration coverage through a dexterous-hand-adapted intervention system and multi-stage DAgger-style data collection across initial and intermediate task stages, providing reliable supervision for accurate policy evaluation. To reduce temporal noise between post-training rollouts and demonstration data, we introduce asynchronous inference in the relative action space, which better aligns rollout data with demonstrated behavior and allows the critic to learn a value function induced by a more consistent underlying policy. Finally, DexPIE improves the policy through conditioning on a continuous optimality indicator, allowing the policy to leverage the quality of data in a more fine-grained manner. Across three challenging real-world dexterous manipulation tasks, DexPIE achieves a 37% improvement in success rate over the demonstration-based reference policy, outperforming all baseline methods and demonstrating stronger robustness. The source code and dataset will be made publicly available.
           </p>
         </div>
       </div>
@@ -157,129 +400,186 @@
 </section>
 <!-- End paper abstract -->
 
-
-<!-- Image carousel -->
-<section class="hero is-small">
+<!-- Demo videos -->
+<section class="hero is-small demo-videos-section">
   <div class="hero-body">
     <div class="container">
-      <div id="results-carousel" class="carousel results-carousel">
-       <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel1.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          First image description.
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel2.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          Second image description.
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel3.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-         Third image description.
-       </h2>
-     </div>
-     <div class="item">
-      <!-- Your image here -->
-      <img src="static/images/carousel4.jpg" alt="MY ALT TEXT"/>
-      <h2 class="subtitle has-text-centered">
-        Fourth image description.
-      </h2>
-    </div>
-  </div>
-</div>
-</div>
-</section>
-<!-- End image carousel -->
-
-
-
-
-<!-- Youtube video -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <!-- Paper video. -->
-      <h2 class="title is-3">Video Presentation</h2>
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
-          
-          <div class="publication-video">
-            <!-- Youtube embed code here -->
-            <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End youtube video -->
-
-
-<!-- Video carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title is-3">Another Carousel</h2>
-      <div id="results-carousel" class="carousel results-carousel">
+      <div id="demo-video-carousel" class="carousel results-carousel">
         <div class="item item-video1">
-          <video poster="" id="video1" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel1.mp4"
-            type="video/mp4">
+          <video poster="" id="demo-video1" controls muted loop height="100%" preload="metadata">
+            <source src="static/videos/水壶_x264.mp4" type="video/mp4">
           </video>
         </div>
         <div class="item item-video2">
-          <video poster="" id="video2" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel2.mp4"
-            type="video/mp4">
+          <video poster="" id="demo-video2" controls muted loop height="100%" preload="metadata">
+            <source src="static/videos/纸巾_x264.mp4" type="video/mp4">
           </video>
         </div>
         <div class="item item-video3">
-          <video poster="" id="video3" autoplay controls muted loop height="100%">\
-            <!-- Your video file here -->
-            <source src="static/videos/carousel3.mp4"
-            type="video/mp4">
+          <video poster="" id="demo-video3" controls muted loop height="100%" preload="metadata">
+            <source src="static/videos/抓糖果_x264.mp4" type="video/mp4">
           </video>
         </div>
       </div>
     </div>
   </div>
 </section>
-<!-- End video carousel -->
+<!-- End demo videos -->
 
+<!-- Method -->
+<section class="section method-section">
+  <div class="container is-max-widescreen">
+    <div class="method-content">
+      <h2 class="method-title">Method</h2>
 
+      <figure class="method-figure">
+        <img class="method-figure-image" src="static/images/method_overview.png" alt="Overview of the DexPIE framework" loading="lazy">
+        <figcaption class="method-figure-caption">
+          <strong>Overview of DexPIE framework.</strong>
+          (a) The model architecture consists of an actor and a critic. The actor is an optimality-conditioned diffusion policy, with an action space defined as relative EEF actions concatenated with absolute dexterous-hand joint actions, while the critic is a distributional value network. (b) The policy is warm-started with demonstration data, and CFG is applied to the optimality indicator. During deployment, failures or exploration bottlenecks trigger human intervention. We further perform DAgger-style data collection across different task stages. (c) After obtaining stable advantage estimates, we perform policy improvement conditioned on a continuous optimality indicator. (d) We reduce the distribution shift between post-training data and teleoperation demonstrations through asynchronous inference.
+        </figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+<!-- End method -->
 
+<!-- Human-in-the-loop data collection -->
+<section class="section hitl-section">
+  <div class="container is-max-widescreen">
+    <div class="hitl-content">
+      <h2 class="hitl-title">Human-in-the-loop Data Collection</h2>
 
+      <figure class="hitl-video-figure">
+        <video class="hitl-video" controls muted loop playsinline preload="metadata">
+          <source src="static/videos/干预_x264.mp4" type="video/mp4">
+        </video>
+        <figcaption class="hitl-video-caption">
+          To enable intuitive corrective interventions from arbitrary robot states, we introduce a simple human-as-follower strategy. This design allows the operator to follow the robot state before intervention and take over from an aligned pose, thereby enabling a smooth transition into the intervention state and supporting intuitive corrective control.
+        </figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+<!-- End human-in-the-loop data collection -->
 
+<!-- Asynchronous inference -->
+<section class="section async-section">
+  <div class="container is-max-widescreen">
+    <div class="async-content">
+      <h2 class="async-title">Bridging Demonstration-Deployment Gap via Asynchronous Inference</h2>
 
-<!-- Paper poster -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title">Poster</h2>
+      <figure class="async-figure">
+        <img class="async-figure-image" src="static/images/asynchronous_inference.png" alt="Asynchronous inference bridges the demonstration-deployment gap" loading="lazy">
+      </figure>
 
-      <iframe  src="static/pdfs/sample.pdf" width="100%" height="550">
-          </iframe>
-        
+      <div class="async-video-grid">
+        <article class="async-video-item">
+          <video class="async-video" controls muted loop playsinline preload="metadata">
+            <source src="static/videos/叉_x264.mp4" type="video/mp4">
+          </video>
+        </article>
+
+        <article class="async-video-item">
+          <video class="async-video" controls muted loop playsinline preload="metadata">
+            <source src="static/videos/对_x264.mp4" type="video/mp4">
+          </video>
+        </article>
+      </div>
+
+      <p class="async-caption">
+        As illustrated by this example, different inference settings can lead to substantially different outcome qualities under nearly identical states. Although incorporating failure data is desirable in our post-training setting, we expect such failures to arise from insufficient coverage of the model’s intrinsic behavior distribution, rather than from distribution shifts caused by temporal noise. This mismatch introduces demonstration-deployment gap, forcing the critic to fit a value function induced by a heterogeneous mixture of inconsistent behaviors, making value estimates unreliable and weakening the credit assignment signals used to identify truly suboptimal trajectory segments.
+      </p>
+    </div>
+  </div>
+</section>
+<!-- End asynchronous inference -->
+
+<!-- Value function visualization -->
+<section class="section value-section">
+  <div class="container is-max-widescreen">
+    <div class="value-content">
+      <h2 class="value-title">Value Function Visualization</h2>
+
+      <div id="value-carousel" class="carousel results-carousel value-carousel">
+        <div class="item">
+          <img src="static/images/value_function_1.png" alt="Value function visualization for successful rollout" loading="lazy">
+        </div>
+        <div class="item">
+          <img src="static/images/value_function_2.png" alt="Value function visualization for failed rollout" loading="lazy">
+        </div>
+        <div class="item">
+          <img src="static/images/value_function_3.png" alt="Value function visualization for task 2 success" loading="lazy">
+        </div>
+        <div class="item">
+          <img src="static/images/value_function_4.png" alt="Value function visualization for task 3 success" loading="lazy">
+        </div>
+      </div>
+
+      <p class="value-caption">
+        Staged DAgger provides intermediate anchors for learning progress-aware values, effectively decomposing long-horizon tasks into shorter task segments. Benefiting from exploration coverage across different task stages, the learned value function accurately captures task progress and identifies failure modes, providing reliable credit assignment.
+      </p>
+    </div>
+  </div>
+</section>
+<!-- End value function visualization -->
+
+<!-- Special credit-assignment failure case -->
+<section class="section special-credit-section">
+  <div class="container is-max-widescreen">
+    <div class="special-credit-content">
+      <h2 class="special-credit-title">Special Credit-Assignment Failure Case</h2>
+
+      <div class="special-credit-image-grid">
+        <figure class="special-credit-image-item">
+          <img class="special-credit-image" src="static/images/special_failure_value_1.png" alt="Special credit-assignment failure value curve 1" loading="lazy">
+        </figure>
+
+        <figure class="special-credit-image-item">
+          <img class="special-credit-image" src="static/images/special_failure_value_2.png" alt="Special credit-assignment failure value curve 2" loading="lazy">
+        </figure>
+      </div>
+
+      <figure class="special-credit-video-figure">
+        <video class="special-credit-video" controls muted loop playsinline preload="metadata">
+          <source src="static/videos/special_credit%20assignment_x264.mp4" type="video/mp4">
+        </video>
+      </figure>
+
+      <div class="special-credit-caption">
+        <figure class="special-credit-side-figure">
+          <img src="static/images/失败示意图.png" alt="Special failure trajectory caused by robot-table collision" loading="lazy">
+          <figcaption>Special failure trajectory labeled due to robot-table collision.</figcaption>
+        </figure>
+
+        <p>
+          During our experiments, we have observed a special case of incorrect credit assignment. In one data-collection process, the robot repeatedly collides with the table, triggering collision detection and terminating the rollout. We label these trajectories as failure trajectories. As shown in the video below, we visualize the image observation at the terminal state of one such failure trajectory. However, from the image observation alone, the value function cannot accurately attribute the failure to the grasp position being too low. Instead, as shown in the two value-function visualizations above, it assigns lower values to states where the robot approaches the tissue box for grasping, resulting in incorrect credit assignment. This misattribution further causes the policy to avoid approaching the tissue box during deployment, leading to repeated grasp failures, as shown in the video below. To mitigate this issue, we filter out such failure trajectories to avoid misleading credit assignment and use human intervention to correct the collision behavior. This observation suggests that such incorrect credit assignment can be mitigated in two ways: either by incorporating richer information into the critic to better identify failure modes, or by filtering failure trajectories whose causes are difficult to infer from visual observations alone, making the remaining failure data more suitable for visual critic learning. In practice, it is not sufficient to simply introduce failure data; the critic must also be able to correctly recognize and attribute the underlying erroneous behaviors.
+        </p>
       </div>
     </div>
-  </section>
-<!--End paper poster -->
+  </div>
+</section>
+<!-- End special credit-assignment failure case -->
 
 
 <!--BibTex citation -->
-  <section class="section" id="BibTeX">
-    <div class="container is-max-desktop content">
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <div class="bibtex-header">
       <h2 class="title">BibTeX</h2>
-      <pre><code>BibTex Code Here</code></pre>
+      <button class="copy-bibtex-btn" onclick="copyBibTeX()" title="Copy BibTeX to clipboard">
+        <i class="fas fa-copy"></i>
+        <span class="copy-text">Copy</span>
+      </button>
     </div>
+    <pre id="bibtex-code"><code>@article{liao2024dexpie,
+  title={DexPIE: Stable Dexterous Policy Improvement from Real-World Experience},
+  author={Ruizhe Liao and Wenrui Chen and Liangji Zeng and Haoran Lin and Fan Yang and Kailun Yang and Yaonan Wang},
+  journal={Conference/Journal Name},
+  year={2024},
+  url={https://siiuuuuu.github.io/DexPIE}
+}</code></pre>
+  </div>
 </section>
 <!--End BibTex citation -->
 
@@ -303,7 +603,7 @@
 </footer>
 
 <!-- Statcounter tracking code -->
-  
+
 <!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
 
     <!-- End of Statcounter Code -->
