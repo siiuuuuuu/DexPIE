@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="DexPIE lettermark icon">
+  <defs>
+    <linearGradient id="lettermark-bg" x1="10" y1="6" x2="58" y2="58" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#172554"/>
+      <stop offset="0.58" stop-color="#2563eb"/>
+      <stop offset="1" stop-color="#14b8a6"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="14" fill="url(#lettermark-bg)"/>
+  <path d="M14 45V19h15.2c8.9 0 14.8 5.1 14.8 13s-5.9 13-14.8 13H14zm9.1-7.3h5.6c3.7 0 6.1-2.2 6.1-5.7s-2.4-5.7-6.1-5.7h-5.6v11.4z" fill="#fff"/>
+  <path d="M39.8 45V27.6h13.8v5.5h-6.4V45h-7.4z" fill="#dffcf7"/>
+  <circle cx="51.6" cy="20.2" r="4.1" fill="#facc15"/>
+</svg>

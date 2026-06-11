@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>DexPIE Favicon Concepts</title>
+  <style>
+    :root {
+      color-scheme: light;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: #172033;
+      background: #f4f7fb;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      padding: 32px;
+    }
+
+    main {
+      width: min(1060px, 100%);
+      margin: 0 auto;
+    }
+
+    h1 {
+      margin: 0 0 10px;
+      font-size: clamp(28px, 4vw, 42px);
+      line-height: 1.05;
+      letter-spacing: 0;
+    }
+
+    .intro {
+      margin: 0 0 28px;
+      max-width: 720px;
+      color: #536174;
+      font-size: 16px;
+      line-height: 1.6;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 18px;
+    }
+
+    .option {
+      border: 1px solid #d7dee9;
+      border-radius: 8px;
+      background: #fff;
+      padding: 20px;
+      box-shadow: 0 10px 28px rgba(23, 32, 51, 0.08);
+    }
+
+    .option h2 {
+      margin: 0 0 14px;
+      font-size: 18px;
+      letter-spacing: 0;
+    }
+
+    .sizes {
+      display: flex;
+      align-items: flex-end;
+      gap: 18px;
+      min-height: 96px;
+      padding: 14px;
+      border-radius: 8px;
+      background:
+        linear-gradient(45deg, #e8edf5 25%, transparent 25%),
+        linear-gradient(-45deg, #e8edf5 25%, transparent 25%),
+        linear-gradient(45deg, transparent 75%, #e8edf5 75%),
+        linear-gradient(-45deg, transparent 75%, #e8edf5 75%);
+      background-color: #f8fafc;
+      background-position: 0 0, 0 8px, 8px -8px, -8px 0;
+      background-size: 16px 16px;
+    }
+
+    .sample {
+      display: grid;
+      gap: 8px;
+      justify-items: center;
+      color: #64748b;
+      font-size: 12px;
+    }
+
+    .sample img {
+      display: block;
+      border-radius: 4px;
+      box-shadow: 0 1px 3px rgba(15, 23, 42, 0.18);
+    }
+
+    .note {
+      margin: 14px 0 0;
+      color: #536174;
+      font-size: 14px;
+      line-height: 1.55;
+    }
+
+    @media (max-width: 820px) {
+      body {
+        padding: 20px;
+      }
+
+      .grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>DexPIE favicon concepts</h1>
+    <p class="intro">Three directions for the browser tab icon. Each one is shown at 64px, 32px, and 16px so the tiny-tab readability is easier to judge.</p>
+
+    <section class="grid" aria-label="Favicon options">
+      <article class="option">
+        <h2>01 Lettermark</h2>
+        <div class="sizes">
+          <div class="sample"><img src="static/images/favicon-lettermark.svg" width="64" height="64" alt="">64</div>
+          <div class="sample"><img src="static/images/favicon-lettermark.svg" width="32" height="32" alt="">32</div>
+          <div class="sample"><img src="static/images/favicon-lettermark.svg" width="16" height="16" alt="">16</div>
+        </div>
+        <p class="note">Best if you want the project name to read as a compact brand mark.</p>
+      </article>
+
+      <article class="option">
+        <h2>02 Robot hand</h2>
+        <div class="sizes">
+          <div class="sample"><img src="static/images/favicon-robot-hand.svg" width="64" height="64" alt="">64</div>
+          <div class="sample"><img src="static/images/favicon-robot-hand.svg" width="32" height="32" alt="">32</div>
+          <div class="sample"><img src="static/images/favicon-robot-hand.svg" width="16" height="16" alt="">16</div>
+        </div>
+        <p class="note">Most directly connected to dexterous manipulation and robotics.</p>
+      </article>
+
+      <article class="option">
+        <h2>03 Academic</h2>
+        <div class="sizes">
+          <div class="sample"><img src="static/images/favicon-academic.svg" width="64" height="64" alt="">64</div>
+          <div class="sample"><img src="static/images/favicon-academic.svg" width="32" height="32" alt="">32</div>
+          <div class="sample"><img src="static/images/favicon-academic.svg" width="16" height="16" alt="">16</div>
+        </div>
+        <p class="note">Cleaner paper/project-page feeling, with a lighter academic visual tone.</p>
+      </article>
+    </section>
+  </main>
+</body>
+</html>
