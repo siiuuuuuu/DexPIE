@@ -319,16 +319,6 @@
                       </span>
 
                       <span class="link-block">
-                        <a href="static/pdfs/view.pdf" target="_blank"
-                          class="external-link button is-normal is-rounded is-light">
-                          <span class="icon">
-                            <i class="fas fa-file-pdf"></i>
-                          </span>
-                          <span>PDF</span>
-                        </a>
-                      </span>
-
-                      <span class="link-block">
                         <span class="external-link button is-normal is-rounded is-light is-disabled" aria-disabled="true" title="Coming soon">
                           <span class="icon">
                             <i class="fab fa-github"></i>
@@ -485,12 +475,49 @@
       </div>
 
       <p class="async-caption">
-        As illustrated by this example, different inference settings can lead to substantially different outcome qualities under nearly identical states. Although incorporating failure data is desirable in our post-training setting, we expect such failures to arise from insufficient coverage of the model’s intrinsic behavior distribution, rather than from distribution shifts caused by temporal noise. This mismatch introduces demonstration-deployment gap, forcing the critic to fit a value function induced by a heterogeneous mixture of inconsistent behaviors, making value estimates unreliable and weakening the credit assignment signals used to identify truly suboptimal trajectory segments.
+        As illustrated by this example, different inference settings can lead to substantially different outcome qualities under nearly identical states.
+        Although incorporating failure data is desirable in our post-training setting, we expect such failures to arise from insufficient coverage of the model’s intrinsic behavior distribution, rather than from distribution shifts between rollout and demonstration behaviors.
+        This mismatch introduces demonstration-deployment gap, forcing the critic to fit a value function induced by a heterogeneous mixture of inconsistent behaviors, making value estimates unreliable and weakening the credit assignment signals used to identify truly suboptimal trajectory segments.
       </p>
     </div>
   </div>
 </section>
 <!-- End asynchronous inference -->
+
+<!-- Staged DAgger credit assignment -->
+<section class="section special-credit-section staged-dagger-section">
+  <div class="container is-max-widescreen">
+    <div class="special-credit-content">
+      <h2 class="special-credit-title">How Does Staged DAgger Affect Long-Horizon Credit Assignment?</h2>
+
+      <div class="special-credit-image-grid">
+        <figure class="special-credit-image-item">
+          <img class="special-credit-image" src="static/images/staged_1.PNG" alt="Value comparison between staged DAgger and DAgger for an intervention trajectory" loading="lazy">
+        </figure>
+
+        <figure class="special-credit-image-item">
+          <img class="special-credit-image" src="static/images/staged_2.PNG" alt="Value comparison between staged DAgger and DAgger for a failed trajectory" loading="lazy">
+        </figure>
+      </div>
+
+      <p class="special-credit-caption staged-dagger-caption">
+        Starting from the same reference
+        policy, standard DAgger collects rollouts only from the
+        initial state, whereas staged DAgger additionally collects
+        trajectories initialized from later-stage states. As shown in Figure, both critics
+        capture the late-stage failure and recovery actions reasonably well. At the earlier open-lid stage, DAgger underestimates
+        correct progress, whereas staged DAgger yields progressively
+        higher values. This suggests that later-stage data reduces
+        pessimistic credit assignment from downstream failures to
+        earlier correct behaviors. We hypothesize that the later-stage trajectories collected by staged DAgger reduce the
+        variance in estimating intermediate-stage values, providing
+        more reliable intermediate value anchors for earlier states and
+        thereby shortening their effective credit-assignment horizon.
+      </p>
+    </div>
+  </div>
+</section>
+<!-- End staged DAgger credit assignment -->
 
 <!-- Value function visualization -->
 <section class="section value-section">
@@ -500,22 +527,25 @@
 
       <div id="value-carousel" class="carousel results-carousel value-carousel">
         <div class="item">
-          <img src="static/images/value_function_1.png" alt="Value function visualization for successful rollout" loading="lazy">
+          <img src="static/images/value_function_1.PNG" alt="Value function visualization for successful rollout" loading="lazy">
         </div>
         <div class="item">
-          <img src="static/images/value_function_2.png" alt="Value function visualization for failed rollout" loading="lazy">
+          <img src="static/images/value_function_2.PNG" alt="Value function visualization for failed rollout" loading="lazy">
         </div>
         <div class="item">
           <img src="static/images/value_function_3.png" alt="Value function visualization for task 2 success" loading="lazy">
         </div>
         <div class="item">
-          <img src="static/images/value_function_4.png" alt="Value function visualization for task 3 success" loading="lazy">
+          <img src="static/images/value_function_4.PNG" alt="Value function visualization for task 3 success" loading="lazy">
+        </div>
+        <div class="item">
+          <img src="static/images/value_function_5.PNG" alt="Value function visualization for a failed rollout" loading="lazy">
+        </div>
+        <div class="item">
+          <img src="static/images/value_function_6.png" alt="Value function visualization for task 1 success" loading="lazy">
         </div>
       </div>
 
-      <p class="value-caption">
-        Staged DAgger provides intermediate anchors for learning progress-aware values, effectively decomposing long-horizon tasks into shorter task segments. Benefiting from exploration coverage across different task stages, the learned value function accurately captures task progress and identifies failure modes, providing reliable credit assignment.
-      </p>
     </div>
   </div>
 </section>
